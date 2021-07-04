@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { CakeStatus } from "../types/cake-status";
+import { CakeStatus } from "./types/cake-status";
 
 export { CakeStatus };
 

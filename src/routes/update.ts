@@ -3,7 +3,7 @@ import { Cake } from "../models/cake";
 import { body } from "express-validator";
 import { validateRequest } from "../middlewares";
 import { NotFoundError } from "../errors";
-import { CakeStatus } from "../types/cake-status";
+import { CakeStatus } from "../models/types/cake-status";
 
 
 const router = express.Router();

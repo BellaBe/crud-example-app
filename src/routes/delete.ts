@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import { Cake } from "../models/cake";
 import { NotFoundError } from "../errors";
-import { CakeStatus } from "../types/cake-status";
+import { CakeStatus } from "../models/types/cake-status";
 
 
 const router = express.Router();

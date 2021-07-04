@@ -3,7 +3,7 @@ import { BadRequestError } from "../errors";
 import { validateRequest } from "../middlewares";
 import { body } from "express-validator";
 import { Cake } from "../models/cake";
-import { CakeStatus } from "../types/cake-status";
+import { CakeStatus } from "../models/types/cake-status";
 
 
 const router = express.Router();
