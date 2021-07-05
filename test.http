@@ -13,10 +13,10 @@ GET http://localhost:3000/api/cakes
 Content-Type: application/json
 
 ###
-GET http://localhost:3000/api/cakes/60e2a9d56ad9dd4d115724c7
+GET http://localhost:3000/api/cakes/
 Content-Type: application/json
 ###
-PUT http://localhost:3000/api/cakes/60e2aad914a4ce4da8766cd0
+PUT http://localhost:3000/api/cakes/
 Content-Type: application/json
 
 {
@@ -26,5 +26,5 @@ Content-Type: application/json
     "yumFactor": 5
 }
 ###
-DELETE  http://localhost:3000/api/cakes/60e2aad914a4ce4da8766cd0
+DELETE  http://localhost:3000/api/cakes/
 Content-Type: application/json
