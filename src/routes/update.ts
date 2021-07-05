@@ -8,13 +8,13 @@ import { CakeStatus } from "../models/types/cake-status";
 
 const router = express.Router();
 
-router.put("/api/cakes/:id", [
+router.put("/api/cakes/:cakeId", [
     body("name").not().isEmpty().withMessage("Name is required"),
     body("comment").not().isEmpty().isLength({ min: 5, max: 200 }).withMessage("Comment is required and must be between 5 and 200 characters."),
     body("imageUrl").not().isEmpty().withMessage("Image url is required"),
     body("yumFactor").not().isEmpty().isFloat({ min: 1, max: 5 }).withMessage("Yum factor is required and must be between 1 and 5")
 ], validateRequest, async (req: Request, res: Response) => {
-    const cake = await Cake.findById(req.params.id);
+    const cake = await Cake.findById(req.params.cakeId);
 
     if (!cake) {
         throw new NotFoundError();

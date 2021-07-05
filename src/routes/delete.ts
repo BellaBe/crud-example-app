@@ -18,7 +18,7 @@ router.delete("/api/cakes/:cakeId", async (req: Request, res: Response) => {
 
     await cake.save();
 
-    res.status(204).send(cake);
+    res.status(204).send();
 });
 
 export { router as deleteCakeRouter };
